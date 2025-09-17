@@ -55,7 +55,7 @@
 
         .container {
             background-color: cadetblue;
-            height: auto;
+            
 
             .w-70 {
                 background-color: aqua;
@@ -80,29 +80,87 @@
 
 
                 .container {
-                    margin: auto;
-                    height: 4rem;
+
+                    height: 5.5rem;
+                    padding-bottom: 15rem;
                     background-color: rgb(20, 123, 220);
-                    .tb-head{
-                        height: 2rem;
-                        background-color: cadetblue;
-                        border-bottom: 1px;
-                    }
-                    section{
-                        background-color: brown;
-                        width: 80%;
-                        height: 9rem;
-                    }
-                    .button{
+
+                    .playsolder{
+                    
+                        height: 200px;
+                        width: 55%;
+                        background-color: chocolate; 
+
                         
                     }
+                    .join{
+                        height: 200px;
+                        width: 45%;
+                        margin: auto;
+                        text-align: left;
+                        
+                    }
+
+                    
+                    
+
+                    .tb-head {
+                        height: 2rem;
+                        background-color: rgb(148, 160, 95);
+                        border-color: black;
+                        border-radius: 1px;
+                    }
+
+                    .tb-body {
+
+                        section {
+                            background-color: brown;
+
+                            height: 9rem;
+                        }
+
+                        .button {
+                            background-color: blueviolet;
+                            height: 9rem;
+                            width: 20%;
+
+                            button {
+                                background-color: aqua;
+                            }
+                        }
+                    }
                 }
+
+                operation{
+                    background-color: rgb(180, 125, 86);
+                }
+
+                .team{
+                    background-color: rgb(101, 105, 33);
+                    height: 12rem;
+                    width: 100%;
+                    .client{
+                        width: 60%;
+                        height: 150px;
+                        background-color: brown;
+                    }
+                }
+
             }
 
 
 
 
 
+        }
+    }
+    /*end debug main*/
+
+    footer{
+        background-color: chartreuse;
+        height: 15rem;
+        .container{
+            background-color: yellow;
         }
     }
 
@@ -157,9 +215,25 @@ main {
 
 .column {
     justify-content: space-between;
+
+
 }
 
 .cart {
     width: calc(100% / 3 - 1rem);
 
+
+}
+
+.tb-body {
+    justify-content: space-between;
+
+    section {
+        width: 70%;
+    }
+
+}
+
+.button button {
+    padding: 0.5rem;
 }
