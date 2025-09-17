@@ -158,9 +158,25 @@
 
     footer{
         background-color: chartreuse;
-        height: 15rem;
+        height: auto;
         .container{
             background-color: yellow;
+            height: auto;
+            .column {
+                background-color: bisque;
+                height: 400px;
+                width: auto;
+
+                .cart {
+                    background-color: azure;
+                }
+            }
+            .italy{
+                background-color: blue;
+                width: 5rem;
+                height: 5rem;
+                margin-top: 1px;
+            }
         }
     }
 
