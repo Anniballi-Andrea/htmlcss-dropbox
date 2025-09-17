@@ -1,5 +1,37 @@
 .debug{
-    
+    header{
+        background-color: red;
+        height: 3rem;
+        width: 100% auto;
+        .h-card{
+            background-color: blue;
+            height: 2rem;
+            width: 20%;   
+            margin-top: 0.5rem;       
+        }
+
+    }
+
+    /*end debug header*/
+
+    /*start debug main*/
+
+    main{
+        .jumbodrome{
+            justify-content: center;
+            background-color: blueviolet;
+            height: 25rem;
+            padding-top: 3rem;
+            .container section{
+                background-color: yellow;
+                height: 6rem;
+            }
+            
+            
+        }
+    }
+
+    /* end debug main*/
 }
 
 /*common*/
@@ -8,4 +40,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-60{
+    width:60%
+}
+
+header{
+    justify-content: space-between;
+    
+    .h-card{
+
+    }
 }
