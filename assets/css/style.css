@@ -1,78 +1,165 @@
-.debug{
-    header{
+.debug {
+    * {
+        border: 1px dashed;
+    }
+
+    header {
         background-color: red;
         height: 3rem;
         width: 100% auto;
-        .h-card{
+
+        .h-card {
             background-color: blue;
             height: 2rem;
-            width: 20%;   
-            margin-top: 0.5rem;       
+            width: 20%;
+            margin-top: 0.5rem;
         }
 
     }
-
 
     /*end debug header*/
 
     /*start debug main*/
 
-    main{
-        .jumbodrome{
+    main {
+
+        .jumbodrome {
             justify-content: center;
             background-color: blueviolet;
-            height: 30rem;
+            height: 35rem;
             padding-top: 3rem;
-            .container section{
-                background-color: yellow;
-                height: 6rem;
+
+            .container {
+                background-color: green;
+
+                section {
+                    background-color: yellow;
+                    height: 6rem;
+                }
+
+                .t-card {
+                    height: 325px;
+                    width: 40%;
+                    background-color: blue;
+                }
+
+                .img-card {
+                    background-color: brown;
+                    height: 375px;
+                    width: 60%;
+                }
             }
 
-            .t-card{
-                height: 325px;
-                width: 40%;
-                background-color: blue;
-            }
-            .img-card{
-                background-color: brown;
-                height: 375px;
-                width: 60%;
-            }
 
-            
         }
-        .container{
-            background-color: green;
+
+        .container {
+            background-color: cadetblue;
+            height: auto;
+
+            .w-70 {
+                background-color: aqua;
+
+
+                section {
+                    background-color: yellowgreen;
+                    height: 6rem;
+                }
+
+                .column {
+                    background-color: bisque;
+                    height: 400px;
+                    width: auto;
+                    padding-bottom: 2rem;
+
+                    .cart {
+                        background-color: azure;
+                    }
+                }
+
+
+
+                .container {
+                    margin: auto;
+                    height: 4rem;
+                    background-color: rgb(20, 123, 220);
+                    .tb-head{
+                        height: 2rem;
+                        background-color: cadetblue;
+                        border-bottom: 1px;
+                    }
+                    section{
+                        background-color: brown;
+                        width: 80%;
+                        height: 9rem;
+                    }
+                    .button{
+                        
+                    }
+                }
+            }
+
+
+
+
+
         }
     }
 
-    /* end debug main*/
 }
+
+
+
+
+
+
+
+
+/* end debug main*/
+
 
 /*common*/
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.w-80{
+.w-80 {
     width: 80%;
+    margin: auto;
 }
 
-.w-60{
-    width:60%
+.w-70 {
+    width: 70%;
+    margin: auto;
 }
 
-header{
+
+
+
+header {
     justify-content: space-between;
-    
-    .h-card{
 
-    }
+    .h-card {}
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.column {
+    justify-content: space-between;
+}
+
+.cart {
+    width: calc(100% / 3 - 1rem);
+
 }
