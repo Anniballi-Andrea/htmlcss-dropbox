@@ -12,6 +12,7 @@
 
     }
 
+
     /*end debug header*/
 
     /*start debug main*/
@@ -20,14 +21,28 @@
         .jumbodrome{
             justify-content: center;
             background-color: blueviolet;
-            height: 25rem;
+            height: 30rem;
             padding-top: 3rem;
             .container section{
                 background-color: yellow;
                 height: 6rem;
             }
+
+            .t-card{
+                height: 325px;
+                width: 40%;
+                background-color: blue;
+            }
+            .img-card{
+                background-color: brown;
+                height: 375px;
+                width: 60%;
+            }
+
             
-            
+        }
+        .container{
+            background-color: green;
         }
     }
 
