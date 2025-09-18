@@ -610,3 +610,7 @@ footer{
         color: var(--dro-button);
     }
 }
+
+.plain-tab{
+    justify-content: space-between;
+}
