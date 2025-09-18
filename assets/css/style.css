@@ -207,6 +207,7 @@
     --dro-button: #0061fe;
     --dro-light: white;
     --dro-primary: #b4d0e6;
+    --dro-dark: black;
 }
 
 .d-flex {
@@ -354,7 +355,7 @@ header {
 }
 
 /*end header*/
-
+/*main*/
 main {
     flex-direction: column;
     justify-content: center;
@@ -449,6 +450,36 @@ main {
 
 }
 
+/*end main*/
+/*footer*/
+footer{
+    background-color: var(--dro-dark);
+    color: var(--dro-light);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .italy{
+        
+        border-top: 5px;
+        border-color: var(--dro-light);
+        width: calc(100% / 5);
+
+        hr{
+           margin-top: 6rem;
+           margin-bottom: 3rem;
+        }
+
+        .fa-triangle{
+            color: var(--dro-light);
+        }
+        
+        
+    }
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
 .emergency{
     padding-top: 2rem;
 }
@@ -491,6 +522,15 @@ main {
 
 .column-33 {
     justify-content: space-between;
+}
+
+.column-5{
+    width: calc(100% / 5 -5rem);
+    justify-content: space-between;
+    text-align: left;
+    ul{
+        list-style: none;
+    }
 }
 
 .cart {
