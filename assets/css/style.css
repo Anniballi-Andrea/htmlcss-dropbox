@@ -5,14 +5,18 @@
 
     header {
         background-color: red;
-        height: 3rem;
+        min-height: 3rem;
         width: 100% auto;
+        
 
         .h-card {
             background-color: blue;
-            height: 2rem;
-            width: 20%;
+            min-height: 2rem;
+            min-width: 20%;
             margin-top: 0.5rem;
+            a{
+                
+            }
         }
 
     }
@@ -55,7 +59,7 @@
 
         .container {
             background-color: cadetblue;
-            
+
 
             .w-70 {
                 background-color: aqua;
@@ -85,24 +89,25 @@
                     padding-bottom: 15rem;
                     background-color: rgb(20, 123, 220);
 
-                    .playsolder{
-                    
+                    .playsolder {
+
                         height: 200px;
                         width: 55%;
-                        background-color: chocolate; 
+                        background-color: chocolate;
 
-                        
+
                     }
-                    .join{
+
+                    .join {
                         height: 200px;
                         width: 45%;
                         margin: auto;
                         text-align: left;
-                        
+
                     }
 
-                    
-                    
+
+
 
                     .tb-head {
                         height: 2rem;
@@ -131,15 +136,16 @@
                     }
                 }
 
-                operation{
+                operation {
                     background-color: rgb(180, 125, 86);
                 }
 
-                .team{
+                .team {
                     background-color: rgb(101, 105, 33);
                     height: 12rem;
                     width: 100%;
-                    .client{
+
+                    .client {
                         width: 60%;
                         height: 150px;
                         background-color: brown;
@@ -154,14 +160,17 @@
 
         }
     }
+
     /*end debug main*/
 
-    footer{
+    footer {
         background-color: chartreuse;
         height: auto;
-        .container{
+
+        .container {
             background-color: yellow;
             height: auto;
+
             .column {
                 background-color: bisque;
                 height: 400px;
@@ -171,7 +180,8 @@
                     background-color: azure;
                 }
             }
-            .italy{
+
+            .italy {
                 background-color: blue;
                 width: 5rem;
                 height: 5rem;
@@ -182,13 +192,6 @@
 
 }
 
-
-
-
-
-
-
-
 /* end debug main*/
 
 
@@ -197,6 +200,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --dro-button:#0061fe;
 }
 
 .d-flex {
@@ -215,12 +223,32 @@
 
 
 
-
+/* header*/
 header {
     justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
 
-    .h-card {}
+    .h-card {
+        display: flex;
+        align-items: center;
+            
+            a{
+                text-decoration: none;
+                color: black;
+                padding: 0 1rem;
+                font-size: 0.8rem;
+                
+            }
+
+            button{
+                background-color: var(--dro-button);
+                padding: 2px 8px;
+            }
+        
+    }
 }
+/*end header*/
 
 main {
     flex-direction: column;
