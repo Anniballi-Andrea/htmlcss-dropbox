@@ -542,3 +542,17 @@ main {
     
     
 }
+.operation{
+    justify-content: space-between;
+    
+    p{
+        font-size: 0.8rem;
+        padding-top: 1rem;
+    }
+    .column-33{
+        border: 0;
+    }
+    
+        
+    
+}
