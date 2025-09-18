@@ -42,15 +42,15 @@
                 }
 
                 .t-card {
-                    height: 325px;
-                    width: 40%;
+                    min-height: 325px;
+                    min-width: 40%;
                     background-color: blue;
                 }
 
                 .img-card {
                     background-color: brown;
-                    height: 375px;
-                    width: 60%;
+                    min-height: 375px;
+                    min-width: 60%;
                 }
             }
 
@@ -67,13 +67,13 @@
 
                 section {
                     background-color: yellowgreen;
-                    height: 6rem;
+                    min-height: 6rem;
                 }
 
                 .column {
                     background-color: bisque;
-                    height: 400px;
-                    width: auto;
+                    min-height: 400px;
+                    min-width: auto;
                     padding-bottom: 2rem;
 
                     .cart {
@@ -85,14 +85,14 @@
 
                 .container {
 
-                    height: 5.5rem;
+                    min-height: 5.5rem;
                     padding-bottom: 15rem;
                     background-color: rgb(20, 123, 220);
 
                     .playsolder {
 
-                        height: 200px;
-                        width: 55%;
+                        min-height: 200px;
+                        min-width: none;width: 55%;
                         background-color: chocolate;
 
 
@@ -205,19 +205,21 @@
 
 :root{
     --dro-button:#0061fe;
+    --dro-light:white;
+    --dro-primary:#b4d0e6;
 }
 
 .d-flex {
     display: flex;
 }
 
-.w-80 {
-    width: 80%;
+.w-70 {
+    width: 70%;
     margin: auto;
 }
 
-.w-70 {
-    width: 70%;
+.w-60 {
+    width: 60%;
     margin: auto;
 }
 
@@ -232,6 +234,10 @@ header {
     .h-card {
         display: flex;
         align-items: center;
+
+        img{
+            height: 1.2rem;
+        }
             
             a{
                 text-decoration: none;
@@ -244,6 +250,8 @@ header {
             button{
                 background-color: var(--dro-button);
                 padding: 2px 8px;
+                border: 0;
+                color: var(--dro-light);
             }
         
     }
@@ -253,6 +261,28 @@ header {
 main {
     flex-direction: column;
     justify-content: center;
+    .jumbodrome{
+        
+        background-color: var(--dro-primary);
+        section{
+            padding:3rem 0;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+        .t-card{
+            p{}
+        }
+        .img-card{
+            position: relative;
+            img{
+                position: absolute;
+                height: 350px;
+                right: 1px;
+                bottom: ;
+            }
+        }
+    }
 
 
 }
