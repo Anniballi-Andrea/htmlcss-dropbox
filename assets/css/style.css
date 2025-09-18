@@ -556,3 +556,15 @@ main {
         
     
 }
+
+.team{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    h2{
+        padding-bottom: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: var(--dro-button);
+    }
+}
