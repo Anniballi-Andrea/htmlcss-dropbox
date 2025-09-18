@@ -231,7 +231,9 @@
 .column-33 {
     flex-direction: column;
     border: 1px solid;
-    width: calc(100%/3-1rem);
+    width: 30%;
+    flex-wrap: wrap;
+    gap: auto;
 
     .t-head {
         text-align: center;
@@ -445,6 +447,40 @@ main {
     }
 
 
+}
+
+.emergency{
+    padding-top: 2rem;
+}
+
+.enterprise{
+    
+    border: 1.5px solid;
+    .t-head {
+        text-align: center;
+        border-bottom: 1px solid;
+        padding: 0.5rem;
+    }
+    button{
+        background-color: var(--dro-button);
+        color: var(--dro-light);
+        border: 0px;
+    }
+    .row{
+        h2{
+            padding: 1rem;
+        }
+        p{
+            padding: 1rem;
+        }
+        .column-40{
+            div{
+                padding-top: 1.5rem;
+            }
+        }
+    }
+       
+    
 }
 
 .column {
