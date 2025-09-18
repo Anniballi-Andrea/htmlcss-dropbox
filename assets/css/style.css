@@ -374,7 +374,7 @@ main {
 
         .row {
             padding-top: 3rem;
-            gap: auto;
+            
 
         }
 
@@ -510,4 +510,35 @@ main {
 
 .button button {
     padding: 0.5rem;
+}
+
+.partner{
+    padding-top: 2rem;
+
+    .row{
+        display: flex;
+        .column-40{
+            
+            button{
+                background-color: var(--dro-light);
+                padding: 0.5rem 1rem;
+                margin: 1rem 0;
+            }
+            .margin{
+                padding-left: 1rem;
+                h2{
+                    
+                    padding-top: 2rem;
+                }
+                margin-left: 2rem;
+                p{
+                    padding: 1rem 0;
+                }
+
+            }
+        
+    }
+    }
+    
+    
 }
