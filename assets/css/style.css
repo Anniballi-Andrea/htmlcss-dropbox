@@ -223,6 +223,15 @@
     margin: auto;
 }
 
+.column-2{
+    width: calc(100%/2);
+}
+
+.row{
+    flex-wrap: wrap;
+    display: flex;
+}
+
 
 
 /* header*/
@@ -270,16 +279,41 @@ main {
                 font-size: 2.5rem;
             }
         }
-        .t-card{
-            p{}
+
+        .row{
+            padding-top: 3rem;
+
         }
-        .img-card{
+        .column-2{
+            
+            p{
+                font-size: 0.7rem;
+                text-align: left;
+                padding-right: 5rem;
+                padding-bottom: 1.5rem;
+                i{
+                    font-size: 2.5rem;
+                    padding-top: 2rem;
+                }
+            }
+            button{
+                padding: 0.5rem 0.7rem;
+                background-color: var(--dro-button);
+                color: var(--dro-light);
+                border: 0;
+                margin-bottom: 1.5rem;
+
+            }
+
+        }
+        .column-2{
             position: relative;
+            
             img{
                 position: absolute;
                 height: 350px;
-                right: 1px;
-                bottom: ;
+                top: 1rem;
+                
             }
         }
     }
